@@ -1,0 +1,9 @@
+restauranteHabilitado IS true
+restaurantePlatos IS true
+AND
+tieneCalificacionesPositivas IS true
+AND
+previamenteDeclinado IS true
+AND
+puntajeRestaurante IS true
+AND

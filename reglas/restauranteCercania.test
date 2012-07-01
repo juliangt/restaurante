@@ -1,0 +1,5 @@
+# Format of this file is:
+# Rule_Element_Type|Rule_Element_Name|SQL_Statement|Expected_Return_Data_Type_from_SQL_Query
+
+p|restauranteHabilitado|SELECT if(((SELECT habilitado FROM Restaurante r WHERE r.id = ? ) = '1'), 1, 0);|boolean
+p|restauranteCercania|SELECT if ((select distancia<radio as cumple from (SELECT res.id AS restaurante, rec.radio, ROUND((ACOS(SIN(RADIANS(res.coordenadaX))*SIN(RADIANS(com.UbicacionX))+COS( RADIANS(res.coordenadaX))*COS(RADIANS(com.UbicacionX))*COS(RADIANS(res.coordenadaY)-RADIANS(com.UbicacionY)))*6378),2) AS distancia FROM RestaurantesRecomendacion rr LEFT JOIN Restaurante res ON rr.idRestaurante = res.id LEFT JOIN Recomendacion rec ON rr.idRecomendacion = rec.id LEFT JOIN Comensal com ON rec.idComensal = com.id WHERE rr.id = ?  HAVING distancia < rec.radio) as c), 1, 0);|boolean

@@ -1,0 +1,5 @@
+# Format of this file is:
+# Rule_Element_Type|Rule_Element_Name|SQL_Statement|Expected_Return_Data_Type_from_SQL_Query
+
+p|platosRestriccion|SELECT if (( SELECT count(*) FROM PlatosRecomendacion pr LEFT JOIN PlatoDeComida pdc ON pr.idPlato = pdc.id  LEFT JOIN Recomendacion rec ON pr.idRecomendacion = rec.id LEFT JOIN IngredientePlato inp on inp.idPlato = pdc.id LEFT JOIN Restriccion rst ON rec.idRestriccion = rst.id LEFT JOIN IngredienteRestriccion inr ON rst.id = inr.idRestriccion where pr.id = ? and inr.idIngrediente = inp.idIngrediente ), 0, 1);|boolean
+p|sinRestriccion|SELECT if ((SELECT idRestriccion FROM Recomendacion r LEFT JOIN RestaurantesRecomendacion rr ON r.id = rr.idRecomendacion WHERE rr.id = ?), 1, 0);|boolean

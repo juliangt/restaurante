@@ -1,0 +1,9 @@
+# Format of this file is:
+# Rule_Element_Type|Rule_Element_Name|SQL_Statement|Expected_Return_Data_Type_from_SQL_Query
+
+p|restauranteHabilitado|SELECT if(((SELECT habilitado FROM Restaurante r WHERE r.id = ? ) = '1'), 1, 0);|boolean
+p|restaurantePlatos|SELECT if(((select count(*) as c from Restaurante r inner join RestaurantePlato rp on r.id = rp.idrestaurante inner join PlatoDeComida p on rp.idPlato = p.id  where r.id = ?) > '0'), 1, 0);|boolean
+p|puntajeRestaurante|SELECT if(((SELECT AVG( puntajeRestaurante ) FROM HistorialConsumos WHERE idRestaurante = ?) > '5'), 1, 0);|boolean
+p|tieneCalificacionesPositivas|SELECT if(((select puntaje from Restaurante where id = ?) > '0'), 1, 0);|boolean
+
+p|previamenteDeclinado|SELECT if(((select 1 from Restaurante where id = 1) = '1'), 1, 0);|boolean

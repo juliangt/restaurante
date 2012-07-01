@@ -1,0 +1,8 @@
+# Format of this file is:
+# Rule_Element_Type|Rule_Element_Name|SQL_Statement|Expected_Return_Data_Type_from_SQL_Query
+
+p|passengerIsEconomy|SELECT if(((SELECT p.class FROM passengers p WHERE p.id = ? ) = 'economy'), 1, 0);|boolean
+p|passengerIsGoldCardHolder|SELECT if(((SELECT p.card_type FROM passengers p WHERE p.id = ? ) = 'gold'), 1, 0);|boolean
+p|passengerIsSilverCardHolder|SELECT if(((SELECT p.card_type FROM passengers p WHERE p.id = ? ) = 'silver'), 1, 0);|boolean
+v|passengerCarryOnBaggageWeight|SELECT b.weight FROM passengers p, baggage b WHERE b.passenger_id = p.id and p.id = ?;|double
+v|passengerCarryOnBaggageAllowance|SELECT v.value FROM variables v WHERE v.name = 'passengerCarryOnBaggageAllowance';|double

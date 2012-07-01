@@ -1,0 +1,5 @@
+# Format of this file is:
+# Rule_Element_Type|Rule_Element_Name|SQL_Statement|Expected_Return_Data_Type_from_SQL_Query
+
+p|restauranteFamilia|SELECT if ((SELECT COUNT(*) FROM RestaurantesRecomendacion rr LEFT JOIN Restaurante res ON rr.idRestaurante = res.id LEFT JOIN Recomendacion rec ON rr.idRecomendacion = rec.id LEFT JOIN Comensal com ON rec.idComensal = com.id LEFT JOIN RestauranteFamilia ref ON res.id = ref.idRestaurante LEFT JOIN FamiliasDeCocina fdc ON ref.idFamilia = fdc.id WHERE rr.id = ? AND ( fdc.id = rec.idFamilia )), 1, 0);|boolean
+p|sinPreferencia|SELECT if ((SELECT idFamilia FROM Recomendacion r LEFT JOIN RestaurantesRecomendacion rr ON r.id = rr.idRecomendacion WHERE rr.id = ?), 0, 1);|boolean
