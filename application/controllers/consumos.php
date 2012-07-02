@@ -14,7 +14,7 @@ class consumos extends CI_Controller {
     }
     
     public function lista () {
-        
+
         $this -> db -> select ('HistorialConsumos.id as idHistorial, PlatoDeComida.nombre as nombrePlato, Restaurante.nombre as nombreRestaurante');
         $this -> db -> where ('idComensal',$this->u->id);
         $this -> db -> where ('feedback', 0);

@@ -5,18 +5,14 @@ class Usuario_model extends CI_Model {
     var $Mail		= '';
     var $UbicacionX     = '';
     var $UbicacionY     = '';
+    var $consumos       = '';
+    var $sugerencias    = '';
     
     function __construct()
     {
         parent::__construct();
     }
     
-    function get_last_ten_entries()
-    {
-        $query = $this->db->get('Comensal', 10);
-        return $query->result();
-    }
-
     function get_user($id)  {
         $query = $this -> db -> get_where('Comensal', array('id' => $id));
         $u = $query->result();
@@ -43,4 +39,20 @@ class Usuario_model extends CI_Model {
         }
     }
 
+    function getSugerencias() {
+        return $this->sugerencias;
+    }
+    
+    function getConsumos() {
+        return $this->consumos;
+    }
+    
+    function setSugerencias($s) {
+        return $this->sugerencias[] = $s;
+    }
+    
+    function setConsumos($c) {
+        return $this->consumos[] = $c;
+    }
+    
 }

@@ -51,27 +51,8 @@
 		  <!-- primer modulo -->
 		  <li><a href="<?php echo base_url();?>">Inicio</a></li>
 		  <li class="dropdown" id="menu1">
-
-		  <!-- segundo modulo -->
-		    <a class="dropdown-toggle" data-toggle="dropdown" href="#menu2">
-		      Usuarios
-		      <b class="caret"></b>
-		    </a>
-		    <ul class="dropdown-menu" id="#menu2">
-		      <li><a href="<?php echo base_url();?>usuario/login/">Login</a></li>
-		     
-                     <?php //if ($esAdmin != 0) { ?>
-		      	  <li class="divider"></li>
-                              <li><a href="#">Listar Restaurantes</a></li>
-			      <li><a href="#">Listar Comensales</a></li>
-			      <li><a href="#">Buscar criticas de comensal</a></li>
-			      
-			      <li class="divider"></li>
-		      <?php // } ?>
-		      <li><a href="<?php echo base_url();?>usuario/logout/">Logout</a></li>
-		      
-		    </ul>
-		  </li>
+            
+              
 
 		</ul>
           </div><!--/.nav-collapse -->
