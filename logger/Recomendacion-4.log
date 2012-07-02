@@ -1,0 +1,41 @@
+2012-07-02 17:39:12 - Usuario inicia solicitud: celu@mail.com 
+2012-07-02 17:39:12 - Se guardo la recomendacion en la base de datos 
+2012-07-02 17:39:12 - Se actualizo la ubicacion del comensal 
+2012-07-02 17:39:12 - Latitud:  
+2012-07-02 17:39:12 - Longitud  
+2012-07-02 17:39:12 - Se agrego el par Rec, Restaurante: 1 
+2012-07-02 17:39:12 - Se agrego el par Rec, Restaurante: 2 
+2012-07-02 17:39:12 - Se agrego el par Rec, Restaurante: 3 
+2012-07-02 17:39:12 - Se agrego el par Rec, Restaurante: 4 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 1, Plato: 10 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 1, Plato: 11 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 1, Plato: 12 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 2, Plato: 1 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 2, Plato: 2 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 2, Plato: 3 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 2, Plato: 4 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 2, Plato: 5 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 2, Plato: 6 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 2, Plato: 7 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 2, Plato: 8 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 2, Plato: 9 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 3, Plato: 13 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 3, Plato: 14 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 3, Plato: 15 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 4, Plato: 5 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 4, Plato: 6 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 4, Plato: 7 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 4, Plato: 8 
+2012-07-02 17:39:12 - Se agrego el trio Rec, Restaurante: 4, Plato: 9 
+2012-07-02 17:39:12 - Determino si el restaurante se encuentra fuera del radio de busqueda. 
+2012-07-02 17:39:12 - Se elimina al restaurante por no cumplir proximidad : 1 
+2012-07-02 17:39:12 - Se eliminan platos del restaurante eliminado por proximidad: 1 
+2012-07-02 17:39:12 - Se elimina al restaurante por no cumplir proximidad : 2 
+2012-07-02 17:39:12 - Se eliminan platos del restaurante eliminado por proximidad: 2 
+2012-07-02 17:39:12 - Se elimina al restaurante por no cumplir proximidad : 3 
+2012-07-02 17:39:12 - Se eliminan platos del restaurante eliminado por proximidad: 3 
+2012-07-02 17:39:12 - Se elimina al restaurante por no cumplir proximidad : 4 
+2012-07-02 17:39:12 - Se eliminan platos del restaurante eliminado por proximidad: 4 
+2012-07-02 17:39:12 - Determino si el restaurante cumple criterio de familia de cocina deseada. 
+2012-07-02 17:39:12 - Elimino los platos de familia distinta a la ingresada si el restaurante tiene varias familias de cocina. 
+2012-07-02 17:39:12 - Elimino los platos con ingredientes que tengan restricciones. 

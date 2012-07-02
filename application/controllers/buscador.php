@@ -80,7 +80,6 @@ class Buscador extends CI_Controller {
         $this ->reducePlatosFamiliaList();
         $this ->reducePlatosRestriccionesList();
         
-        
         //  redirijo al controlador que maneja el usuario
         redirect('recomendacion/mostrar');
 
@@ -175,7 +174,7 @@ class Buscador extends CI_Controller {
         $this->db->where('idRecomendacion', $this->session->userdata('rid'));
         $query = $this->db->get('RestaurantesRecomendacion');
         
-        // Cargo TODOS los restaurantes para la recomendacion y le aplico la regla de distancia.
+        // Cargo TODOS los restaurantes para la recomendacion y le aplico la regla de familia.
         foreach ($query->result() as $r) {   
             $cumple = $this ->ApplyRule($r->id,'restauranteFamilia');
             
