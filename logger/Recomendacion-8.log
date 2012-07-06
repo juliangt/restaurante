@@ -1,0 +1,38 @@
+2012-07-02 21:41:06 - Usuario inicia solicitud: pablo@mail.com 
+2012-07-02 21:41:06 - Se guardo la recomendacion en la base de datos 
+2012-07-02 21:41:06 - Se actualizo la ubicacion del comensal 
+2012-07-02 21:41:06 - Latitud: -34.655861 
+2012-07-02 21:41:06 - Longitud -58.61672100000001 
+2012-07-02 21:41:06 - Se agrego el par Rec, Restaurante: 1 
+2012-07-02 21:41:07 - Se agrego el par Rec, Restaurante: 2 
+2012-07-02 21:41:07 - Se agrego el par Rec, Restaurante: 3 
+2012-07-02 21:41:07 - Se agrego el par Rec, Restaurante: 4 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 1, Plato: 10 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 1, Plato: 11 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 1, Plato: 12 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 2, Plato: 1 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 2, Plato: 2 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 2, Plato: 3 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 2, Plato: 4 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 2, Plato: 5 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 2, Plato: 6 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 2, Plato: 7 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 2, Plato: 8 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 2, Plato: 9 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 3, Plato: 13 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 3, Plato: 14 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 3, Plato: 15 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 4, Plato: 5 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 4, Plato: 6 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 4, Plato: 7 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 4, Plato: 8 
+2012-07-02 21:41:07 - Se agrego el trio Rec, Restaurante: 4, Plato: 9 
+2012-07-02 21:41:07 - Determino si el restaurante se encuentra fuera del radio de busqueda. 
+2012-07-02 21:41:07 - Determino si el restaurante cumple criterio de familia de cocina deseada. 
+2012-07-02 21:41:07 - Elimino los platos de familia distinta a la ingresada si el restaurante tiene varias familias de cocina. 
+2012-07-02 21:41:08 - Elimino los platos con ingredientes que tengan restricciones. 
+2012-07-02 21:41:18 - Se guardo la sugerencia aceptada: 0. Plato: 5. Restaurante: 2 
+2012-07-02 21:41:18 - Actualizo puntaje del plato en general. Puntaje: -1. Plato: 5 
+2012-07-02 21:41:19 - Actualizo puntaje del Restaurante en general. Puntaje: -1. Restaurante: 2 
+2012-07-02 21:41:19 - Se eliminan platos del restaurante recomendado no aceptado. Restaurante: 2 
+2012-07-02 21:41:19 - Se elimina restaurante recomendado no aceptado. Restaurante: 2. ParRestRec: 30 

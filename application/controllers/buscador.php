@@ -131,7 +131,8 @@ class Buscador extends CI_Controller {
                 $puntajePlato = $this->recuperaPuntajePlato($p->idPlato);
                 $puntajeHistorialPlato = $this->recuperaHistorioPlatoComensal($p->idPlato,$this->u->id);
                
-                $puntaje = $puntajeRestaurante + $puntajeHistorialRestaurante + $puntajePlato + $puntajeHistorialPlato;
+                $puntaje = $puntajeRestaurante  + $puntajePlato + ( ( $puntajeHistorialPlato + $puntajeHistorialRestaurante ) * 2 );
+                
                 $data = array(
                     'idRecomendacion' => $this->session->userdata('rid'),
                     'idRestaurante' => $r->id,
